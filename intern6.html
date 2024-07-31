@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans -serif;
+            margin: 0;
+            padding: 0;
+            color: #090808;
+            background-repeat:repeat;
+            width:100%;
+            max-width:100%;
+            height:100vh;
+            background-image:url(/images/robo.jpg);
+            background-attachment:fixed;
+
+        }
+        .main{
+            background-color:rgba(5, 5, 48, 0.613);
+        }
+        header {
+            background:rgba(2, 6, 36, 0.872);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header h1:hover{
+
+            color:rgb(107, 95, 187);
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #47bec779;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: #d9e1e1;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 3rem;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .skills, .experience, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills div, .experience div, .projects div {
+            background: #f0f0f0;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            width: calc(33% - 2rem);
+            box-shadow: 0 0 10px rgba(223, 8, 8, 0.1);
+        }
+        .skills div:hover, .experience div:hover, .projects div:hover {
+            box-shadow: 0 0 15px 4px rgb(225, 174, 135);
+        }
+        footer {
+            background: #020f2afa;
+            color: white;
+            text-align: center;
+            padding:10px;
+            width: 100%;
+            bottom: 0;
+        }
+        .simple{
+            background-color:rgb(4, 2, 40);
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <header>
+        <h1>Ayushi Gautam</h1>
+        <p>Web Developer | Programmer | Designer</p>
+    </header>
+
+    <nav>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+    </nav>
+
+    <main>
+        <section id="skills" class="section">
+            <h2 style="color:white">Skills</h2>
+            <div class="skills">
+                <div>
+                    <h3>HTML & CSS</h3>
+                    <p>Experienced in building responsive web pages with HTML5 and CSS3.</p>
+                </div>
+                <div>
+                    <h3>JavaScript</h3>
+                    <p>Proficient in JavaScript ES6, including frameworks like React and Angular.</p>
+                </div>
+                <div>
+                    <h3>Java</h3>
+                    <p>Skilled in Java programming for web development </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2 style="color:white">Experience</h2>
+            <div class="experience">
+                <div>
+                    <h3>Intern at Cognifyz Technologies</h3>
+                    <p>Developed projects and worked as a web developer </p>
+                </div>
+                <div>
+                    <h3>Web Developer at  CodSoft</h3>
+                    <p>Worked on various  projects, delivering high-quality web solutions.</p>
+                </div>
+                <div>
+                    <h3>Intern at TechnoHacks Edutech</h3>
+                    <p>Assisted in the development of internal tools and applications as java developer.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 style="color:white;">Projects</h2>
+            <div class="projects">
+                <div>
+                    <h3>Ticket-management</h3>
+                    <p>A web-based application that allows users to book their tickets effictively.</p>
+                </div>
+                <div>
+                    <h3>Portfolio</h3>
+                    <p>A responsive portfolio website showcasing various projects and skills.</p>
+                </div>
+                <div>
+                    <h3>Data Visualizer</h3>
+                    <p>A data visualization tool built with Python and D3.js.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="simple">
+    <h4 style="color:white"><a href="new.pdf" style="color:rgb(71, 110, 209);text-align:center;">Click here to download the Resume</a><br>
+        Contact me at:<a href="new.pdf" style="color:rgb(71, 110, 209);text-align:center;"> gautamayushi91@gmail.com </a><br>
+        Tel:91+9684983746</h4>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ayushi Gautam. All rights reserved.</p>
+    </footer>
+</div>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
